@@ -1,4 +1,4 @@
-package it.unicam.cs.mpgc.RPG122532;
+package it.unicam.cs.mpgc.RPG122532.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
