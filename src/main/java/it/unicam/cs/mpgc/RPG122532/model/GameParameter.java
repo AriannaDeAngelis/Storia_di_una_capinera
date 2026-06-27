@@ -1,10 +1,12 @@
 package it.unicam.cs.mpgc.RPG122532.model;
 
-public class Character {
+public class GameParameter {
     //will, resignation, health = volontà, rassegnazione, salute del personaggio
     private int will;
     private int resignation;
     private int healt;
+    private boolean start;
+    private int IDscene; //salvo anche la scena corrente in caso il gioco si chiuda
 
     public int getWill() {
         return will;
@@ -30,5 +32,19 @@ public class Character {
         this.healt = healt;
     }
 
-    
+    public boolean isStart() {
+        return start;
+    }
+
+    public void setStart(boolean start) {
+        this.start = start;
+    }
+
+    public int getIDscene() {
+        return IDscene;
+    }
+
+    public void setIDscene(int IDscene) {
+        this.IDscene = IDscene;
+    }
 }
