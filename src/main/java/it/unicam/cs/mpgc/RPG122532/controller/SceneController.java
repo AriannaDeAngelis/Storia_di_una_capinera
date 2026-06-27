@@ -21,10 +21,11 @@ public class SceneController {
             var listType = new TypeToken<List<Scene>>(){}.getType();
             List<Scene> scenes = GSON.fromJson(reader, listType);
             Scene requestScene = scenes.stream()
-                                       .filter(u -> u.getIDscene() == 2)
+                                       .filter(u -> u.getIDscene() == IDscene)
                                        .findFirst()
                                        .orElse(null);
             return requestScene;
+
         } catch (IOException e) {
             System.err.println("Errore durante la lettura del file scene: " + e.getMessage());
             return null;

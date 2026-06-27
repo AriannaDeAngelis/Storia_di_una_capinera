@@ -29,4 +29,6 @@ public class Character {
     public void setHealt(int healt) {
         this.healt = healt;
     }
+
+    
 }

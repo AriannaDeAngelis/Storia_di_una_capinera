@@ -1,6 +1,6 @@
 package it.unicam.cs.mpgc.RPG122532.model;
 
-public class Choise {
+public class Choice {
     //azioni
     private int IDchoice;
     private int IDscene;
