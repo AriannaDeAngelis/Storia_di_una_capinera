@@ -1,0 +1,89 @@
+[
+  {
+    "IDscene": 0,
+    "textList": [
+      "Prologo",
+      "Cara Marianna, è da tempo che non ci scriviamo. Il colera ha raggiunto anche Catania; persino il mio monastero è stato chiuso.",
+      "Ho trascorso alcuni giorni sul Monte Ilice, assaporando dopo tanto tempo una gioviale spensieratezza.",
+      "Ho persino conosciuto un ragazzo: si chiama Nino, studia legge, è di un'intelligenza rara. Dire che mi sono innamorata di lui sarebbe riduttivo.",
+      "Lui sembra contraccambiare i miei sentimenti, eppure questa parentesi idilliaca è destinata a chiudersi.",
+      "Proprio oggi sto rientrando nel caro, vecchio convento. Attendo tue notizie. Con affetto, Maria."
+    ],
+    "image": "/Immagini/Immagine1.jpeg"
+  },
+  {
+    "IDscene": 1,
+    "textList": [
+      "Atto 1 — La Gabbia di Velluto",
+      "Il convento non mi è mancato. Il sole, le risate, le giornate limpide stanno già sbiadendo in un ricordo pallido.",
+      "Eppure, una parte di me spera ancora di rivedere Nino, di riavvolgere quel tempo rubato.",
+      "Oggi il cielo è plumbeo. Ma cosa vedo? Una lettera infila la fessura della porta.",
+      "[Raccogli la lettera] È della mia famiglia. [Aprila]",
+      "Una fitta mi trafigge il petto. Nino sposerà la mia sorellastra.",
+      "Cosa devo fare con questa verità?"
+    ],
+    "image": "/Immagini/Immagine1.jpeg"
+  },
+  {
+    "IDscene": 2,
+    "textList": [
+      "Atto 2 — La Febbre e il Silenzio",
+      "I giorni si fanno tetri, come i miei pensieri. La clausura pesa come una lastra di pietra.",
+      "Ogni respiro si fa corto, ogni idea si offusca. La volontà vacilla.",
+      "La tentazione di varcare la soglia diventa un'ossessione."
+    ],
+    "image": "/Immagini/Immagine1.jpeg"
+  },
+  {
+    "IDscene": 3,
+    "textList": [
+      "Atto 2 Bis — La Soglia",
+      "Ho preparato tutto. I passi nel corridoio sono furtivi. Finalmente, la libertà.",
+      "Ma sento un rumore. Passi regolari. La Madre Superiora.",
+      "Una mano mi sfiora la spalla. Il sangue mi gela. «Cosa fai qui, figlia?»"
+    ],
+    "image": "/Immagini/Immagine1.jpeg"
+  },
+  {
+    "IDscene": 4,
+    "textList": [
+      "Atto 2 Ter — Fuori",
+      "L'aria fredda mi brucia i polmoni. Sono fuori. Il cancello è alle mie spalle.",
+      "Ma l'ombra della Madre Superiora mi insegue. Non posso correre per sempre.",
+      "[Implora perdono] Il peso del mondo ti schiaccia. Rientri."
+    ],
+    "image": "/Immagini/Immagine1.jpeg"
+  },
+  {
+    "IDscene": 5,
+    "textList": [
+      "Atto 3 — Il Confine della Mente",
+      "La rassegnazione mi rode dall'interno. La vedo ovunque. Nel chiostro, un'ombra che assomiglia a lui.",
+      "Marianna, sto impazzendo? Perché proprio a me?",
+      "La Madre dice che la sofferenza è grazia, ma io temo solo di finire come Suor Agata, nella cella dei matti."
+    ],
+    "image": "/Immagini/Immagine1.jpeg"
+  },
+  {
+    "IDscene": 6,
+    "textList": [
+      "Atto 3 Bis — I Sotterranei",
+      "Il confessionale è un sepolcro. La voce della Madre Superiora è un coltello: «La tua strada è in basso.»",
+      "Le mie preghiere si sono infrante contro il silenzio. Sono a terra. L'odore di muffa e cera spenta mi soffoca. Respiro affannoso.",
+      "Accanto a me, Suor Agata sorride. «Guarda chi c'è, sopra.»",
+      "I miei occhi salgono. Oltre le sbarre. Nino e Giuditta. Si sposano. Qui. Nel mio convento.",
+      "Il mondo si sfalda. Le pareti respirano. Suor Agata ride. «Vedi, bambina? Sei già come me.»"
+    ],
+    "image": "/Immagini/Immagine1.jpeg"
+  },
+  {
+    "IDscene": 7,
+    "textList": [
+      "Atto 4 — L'Infermeria",
+      "Il dolore mi ha scavata fino all'osso. Non mangio da giorni. Il corpo è un guscio vuoto.",
+      "Non so se queste sono le mie ultime parole. Ciao, Mari. Mi mancherai.",
+      "[Maria viene ritrovata senza vita. Una lettera stretta tra le dita. La pioggia batte sulle inferriate.]"
+    ],
+    "image": "/Immagini/Immagine1.jpeg"
+  }
+]
