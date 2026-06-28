@@ -1,10 +1,10 @@
-package it.unicam.cs.mpgc.RPG122532.controller;
+package it.unicam.cs.mpgc.rpg122532.controller;
 
-import it.unicam.cs.mpgc.RPG122532.model.Choice;
-import it.unicam.cs.mpgc.RPG122532.navigation.SceneNavigator;
-import it.unicam.cs.mpgc.RPG122532.repository.ChoiceRepository;
-import it.unicam.cs.mpgc.RPG122532.repository.GsonChoiceRepository;
-import it.unicam.cs.mpgc.RPG122532.view.ChoiceSceneView;
+import it.unicam.cs.mpgc.rpg122532.model.Choice;
+import it.unicam.cs.mpgc.rpg122532.navigation.SceneNavigator;
+import it.unicam.cs.mpgc.rpg122532.repository.ChoiceRepository;
+import it.unicam.cs.mpgc.rpg122532.repository.GsonChoiceRepository;
+import it.unicam.cs.mpgc.rpg122532.view.ChoiceSceneView;
 import javafx.stage.Stage;
 
 import java.io.IOException;

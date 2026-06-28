@@ -1,10 +1,9 @@
-package it.unicam.cs.mpgc.RPG122532.view;
+package it.unicam.cs.mpgc.rpg122532.view;
 
-import it.unicam.cs.mpgc.RPG122532.controller.ChoiceController;
-import it.unicam.cs.mpgc.RPG122532.controller.GameParameterController;
-import it.unicam.cs.mpgc.RPG122532.controller.SceneController;
-import it.unicam.cs.mpgc.RPG122532.model.Choice;
-import it.unicam.cs.mpgc.RPG122532.model.GameParameter;
+import it.unicam.cs.mpgc.rpg122532.controller.ChoiceController;
+import it.unicam.cs.mpgc.rpg122532.controller.GameParameterController;
+import it.unicam.cs.mpgc.rpg122532.controller.SceneController;
+import it.unicam.cs.mpgc.rpg122532.model.Choice;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

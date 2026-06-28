@@ -1,9 +1,9 @@
-package it.unicam.cs.mpgc.RPG122532.repository;
+package it.unicam.cs.mpgc.rpg122532.repository;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import it.unicam.cs.mpgc.RPG122532.model.Choice;
+import it.unicam.cs.mpgc.rpg122532.model.Choice;
 
 import java.io.FileReader;
 import java.io.IOException;

@@ -1,10 +1,10 @@
-package it.unicam.cs.mpgc.RPG122532.controller;
+package it.unicam.cs.mpgc.rpg122532.controller;
 
-import it.unicam.cs.mpgc.RPG122532.model.Scene;
-import it.unicam.cs.mpgc.RPG122532.navigation.SceneNavigator;
-import it.unicam.cs.mpgc.RPG122532.repository.GsonSceneRepository;
-import it.unicam.cs.mpgc.RPG122532.repository.SceneRepository;
-import it.unicam.cs.mpgc.RPG122532.view.HorrorSceneView;
+import it.unicam.cs.mpgc.rpg122532.model.Scene;
+import it.unicam.cs.mpgc.rpg122532.navigation.SceneNavigator;
+import it.unicam.cs.mpgc.rpg122532.repository.GsonSceneRepository;
+import it.unicam.cs.mpgc.rpg122532.repository.SceneRepository;
+import it.unicam.cs.mpgc.rpg122532.view.HorrorSceneView;
 import javafx.stage.Stage;
 
 import java.io.IOException;

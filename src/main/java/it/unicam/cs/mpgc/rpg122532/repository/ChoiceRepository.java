@@ -1,6 +1,6 @@
-package it.unicam.cs.mpgc.RPG122532.repository;
+package it.unicam.cs.mpgc.rpg122532.repository;
 
-import it.unicam.cs.mpgc.RPG122532.model.Choice;
+import it.unicam.cs.mpgc.rpg122532.model.Choice;
 
 import java.util.List;
 

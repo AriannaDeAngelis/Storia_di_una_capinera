@@ -1,12 +1,8 @@
-package it.unicam.cs.mpgc.RPG122532;
+package it.unicam.cs.mpgc.rpg122532;
 
-import it.unicam.cs.mpgc.RPG122532.controller.GameParameterController;
-import it.unicam.cs.mpgc.RPG122532.controller.SceneController;
+import it.unicam.cs.mpgc.rpg122532.controller.GameParameterController;
+import it.unicam.cs.mpgc.rpg122532.controller.SceneController;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 
 import java.io.IOException;

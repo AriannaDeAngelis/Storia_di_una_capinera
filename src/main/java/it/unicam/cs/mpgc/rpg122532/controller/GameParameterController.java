@@ -1,9 +1,9 @@
-package it.unicam.cs.mpgc.RPG122532.controller;
+package it.unicam.cs.mpgc.rpg122532.controller;
 
-import it.unicam.cs.mpgc.RPG122532.model.Choice;
-import it.unicam.cs.mpgc.RPG122532.model.GameParameter;
-import it.unicam.cs.mpgc.RPG122532.repository.GsonParameterStore;
-import it.unicam.cs.mpgc.RPG122532.repository.ParameterStore;
+import it.unicam.cs.mpgc.rpg122532.model.Choice;
+import it.unicam.cs.mpgc.rpg122532.model.GameParameter;
+import it.unicam.cs.mpgc.rpg122532.repository.GsonParameterStore;
+import it.unicam.cs.mpgc.rpg122532.repository.ParameterStore;
 
 public class GameParameterController {
     private static final String FILE_PATH = "src/main/resources/File/GameParameter.json";

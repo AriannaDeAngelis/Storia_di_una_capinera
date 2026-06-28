@@ -1,4 +1,4 @@
-package it.unicam.cs.mpgc.RPG122532.model;
+package it.unicam.cs.mpgc.rpg122532.model;
 
 public class GameParameter {
     //will, resignation, health = volontà, rassegnazione, salute del personaggio

@@ -1,14 +1,11 @@
-package it.unicam.cs.mpgc.RPG122532.view;
+package it.unicam.cs.mpgc.rpg122532.view;
 
-import it.unicam.cs.mpgc.RPG122532.controller.ChoiceController;
-import it.unicam.cs.mpgc.RPG122532.controller.SceneController;
-import it.unicam.cs.mpgc.RPG122532.model.Choice;
+import it.unicam.cs.mpgc.rpg122532.controller.ChoiceController;
+import it.unicam.cs.mpgc.rpg122532.controller.SceneController;
+import it.unicam.cs.mpgc.rpg122532.model.Choice;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
@@ -31,7 +28,7 @@ public class HorrorSceneView {
     public void init(SceneController sceneController, int ID){
         currentText = 0;
         currentScene = ID;
-        it.unicam.cs.mpgc.RPG122532.model.Scene sceneData = sceneController.readScene(ID);
+        it.unicam.cs.mpgc.rpg122532.model.Scene sceneData = sceneController.readScene(ID);
         this.textList = sceneData.getTextList();
         storyText.setText(textList.get(currentText));
         loadBackground(sceneData.getImage());

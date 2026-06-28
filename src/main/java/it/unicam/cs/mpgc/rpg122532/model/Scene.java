@@ -1,4 +1,4 @@
-package it.unicam.cs.mpgc.RPG122532.model;
+package it.unicam.cs.mpgc.rpg122532.model;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<StackPane prefHeight="600" prefWidth="900" styleClass="horror-root" stylesheets="@horror-style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="it.unicam.cs.mpgc.RPG122532.view.ChoiceSceneView">
+<StackPane prefHeight="600" prefWidth="900" styleClass="horror-root" stylesheets="@horror-style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="it.unicam.cs.mpgc.rpg122532.view.ChoiceSceneView">
 
     <!-- Sfondo intercambiabile (JPEG / PNG) -->
     <ImageView fx:id="backgroundImage" fitHeight="600" fitWidth="900" mouseTransparent="true" pickOnBounds="true" preserveRatio="false">

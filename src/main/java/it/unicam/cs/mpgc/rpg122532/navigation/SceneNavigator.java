@@ -1,4 +1,4 @@
-package it.unicam.cs.mpgc.RPG122532.navigation;
+package it.unicam.cs.mpgc.rpg122532.navigation;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
