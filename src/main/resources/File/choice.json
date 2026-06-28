@@ -3,7 +3,7 @@
     "IDchoice": 1,
     "IDscene": 1,
     "message": "Scrivere una lettera di finte felicitazioni e consegnarla alla Madre Superiora.",
-    "nextScene": "2",
+    "nextScene": 2,
     "alterWill": 0,
     "alterHealt": -5,
     "alterResignation": 10
@@ -12,7 +12,7 @@
     "IDchoice": 2,
     "IDscene": 1,
     "message": "Bruciare la lettera nel braciere.",
-    "nextScene": "2",
+    "nextScene": 2,
     "alterWill": 5,
     "alterHealt": -10,
     "alterResignation": 5
@@ -21,7 +21,7 @@
     "IDchoice": 3,
     "IDscene": 1,
     "message": "Nasconderla sotto il materasso e fingere che nulla sia accaduto.",
-    "nextScene": "2",
+    "nextScene": 2,
     "alterWill": 0,
     "alterHealt": -5,
     "alterResignation": 5
@@ -30,7 +30,7 @@
     "IDchoice": 4,
     "IDscene": 2,
     "message": "Inginocchiati. Prega. La tempesta passerà.",
-    "nextScene": "5",
+    "nextScene": 5,
     "alterWill": 0,
     "alterHealt": -10,
     "alterResignation": 15
@@ -39,7 +39,7 @@
     "IDchoice": 5,
     "IDscene": 2,
     "message": "Scrivi a Marta. Organizza una via di fuga.",
-    "nextScene": "3",
+    "nextScene": 3,
     "alterWill": 10,
     "alterHealt": -5,
     "alterResignation": 0
@@ -48,7 +48,7 @@
     "IDchoice": 6,
     "IDscene": 2,
     "message": "Non mangiare. Lascia che il dolore ti consumi in silenzio.",
-    "nextScene": "5",
+    "nextScene": 5,
     "alterWill": -5,
     "alterHealt": -10,
     "alterResignation": 10
@@ -57,7 +57,7 @@
     "IDchoice": 7,
     "IDscene": 3,
     "message": "«Non avevo sonno. Chiedo perdono.» Rientra in cella.",
-    "nextScene": "5",
+    "nextScene": 5,
     "alterWill": 0,
     "alterHealt": -10,
     "alterResignation": 20
@@ -66,7 +66,7 @@
     "IDchoice": 8,
     "IDscene": 3,
     "message": "Spingila via. Corri verso il cancello.",
-    "nextScene": "4",
+    "nextScene": 4,
     "alterWill": 20,
     "alterHealt": -15,
     "alterResignation": 0
@@ -75,7 +75,7 @@
     "IDchoice": 9,
     "IDscene": 3,
     "message": "«Non mi sento bene.» Vacilla e fingi uno svenimento.",
-    "nextScene": "5",
+    "nextScene": 5,
     "alterWill": 0,
     "alterHealt": -20,
     "alterResignation": 10
@@ -84,7 +84,7 @@
     "IDchoice": 10,
     "IDscene": 4,
     "message": "Implora perdono.",
-    "nextScene": "5",
+    "nextScene": 5,
     "alterWill": 0,
     "alterHealt": -10,
     "alterResignation": 25
@@ -93,7 +93,7 @@
     "IDchoice": 11,
     "IDscene": 5,
     "message": "Confessati. Cerca la redenzione.",
-    "nextScene": "6",
+    "nextScene": 6,
     "alterWill": -10,
     "alterHealt": -5,
     "alterResignation": 20
@@ -102,7 +102,7 @@
     "IDchoice": 12,
     "IDscene": 5,
     "message": "Devi riprenderti. Lotta per il tuo corpo.",
-    "nextScene": "7",
+    "nextScene": 7,
     "alterWill": 15,
     "alterHealt": 10,
     "alterResignation": 0
@@ -111,7 +111,7 @@
     "IDchoice": 13,
     "IDscene": 5,
     "message": "Torna in camera. Non reggi più in piedi.",
-    "nextScene": "7",
+    "nextScene": 7,
     "alterWill": 0,
     "alterHealt": -10,
     "alterResignation": 15
@@ -120,7 +120,7 @@
     "IDchoice": 14,
     "IDscene": 6,
     "message": "Lasciati andare. Chiudi gli occhi. Non mangiare. Non bere.",
-    "nextScene": "7",
+    "nextScene": 7,
     "alterWill": -20,
     "alterHealt": -40,
     "alterResignation": 30
@@ -129,7 +129,7 @@
     "IDchoice": 15,
     "IDscene": 6,
     "message": "Alzati. Corri. Anche se non sai dove.",
-    "nextScene": "7",
+    "nextScene": 7,
     "alterWill": 25,
     "alterHealt": -5,
     "alterResignation": 0

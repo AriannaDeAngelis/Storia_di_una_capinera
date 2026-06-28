@@ -16,12 +16,13 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         GameParameterController gameParameterController = new GameParameterController();
+        SceneController sceneController = new SceneController();
         if (gameParameterController.startNewGame()){
             //deve startare il gioco, caricando la intro
-            SceneController sceneController = new SceneController();
             sceneController.StartFXML(primaryStage, 0);
         } else {
             //altrimenti, carica l'ultimo salvatggio
+            sceneController.StartFXML(primaryStage,gameParameterController.readParameter().getIDscene());
         }
     }
     public static void main(String[] args) {

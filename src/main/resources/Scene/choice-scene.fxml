@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<StackPane prefHeight="600" prefWidth="900" styleClass="horror-root" stylesheets="@horror-style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="it.unicam.cs.mpgc.RPG122532.ChoiceSceneController">
+<StackPane prefHeight="600" prefWidth="900" styleClass="horror-root" stylesheets="@horror-style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="it.unicam.cs.mpgc.RPG122532.view.ChoiceSceneView">
 
     <!-- Sfondo intercambiabile (JPEG / PNG) -->
     <ImageView fx:id="backgroundImage" fitHeight="600" fitWidth="900" mouseTransparent="true" pickOnBounds="true" preserveRatio="false">
@@ -40,9 +40,9 @@
                     <Insets bottom="30" left="20" right="20" top="20" />
                 </padding>
                 <VBox alignment="CENTER" spacing="12">
-                    <Button fx:id="option1Button" onAction="#onOption1Clicked" prefHeight="0.0" prefWidth="801.0" styleClass="option-button" text="Opzione 1: " />
-                    <Button fx:id="option2Button" onAction="#onOption2Clicked" prefHeight="30.0" prefWidth="798.0" styleClass="option-button" text="Opzione 2:" />
-                    <Button fx:id="option3Button" onAction="#onOption3Clicked" prefHeight="26.0" prefWidth="802.0" styleClass="option-button" text="Opzione 3" />
+                    <Button fx:id="option1Button" onAction="#onOptionClicked" prefHeight="30.0" prefWidth="801.0" styleClass="option-button" text="" />
+                    <Button fx:id="option2Button" onAction="#onOptionClicked" prefHeight="30.0" prefWidth="798.0" styleClass="option-button" text="" />
+                    <Button fx:id="option3Button" onAction="#onOptionClicked" prefHeight="30.0" prefWidth="802.0" styleClass="option-button" text="" />
                 </VBox>
             </StackPane>
         </bottom>

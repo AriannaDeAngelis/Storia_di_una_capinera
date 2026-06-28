@@ -5,9 +5,13 @@ public class GameParameter {
     private int will;
     private int resignation;
     private int healt;
-    private boolean start;
     private int IDscene; //salvo anche la scena corrente in caso il gioco si chiuda
 
+    public GameParameter (){
+        int will = 50;
+        int healt = 50;
+        int resignation = 50;
+    }
     public int getWill() {
         return will;
     }
@@ -30,14 +34,6 @@ public class GameParameter {
 
     public void setHealt(int healt) {
         this.healt = healt;
-    }
-
-    public boolean isStart() {
-        return start;
-    }
-
-    public void setStart(boolean start) {
-        this.start = start;
     }
 
     public int getIDscene() {

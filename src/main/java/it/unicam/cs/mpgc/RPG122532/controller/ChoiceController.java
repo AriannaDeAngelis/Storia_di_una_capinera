@@ -1,34 +1,38 @@
 package it.unicam.cs.mpgc.RPG122532.controller;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
+import it.unicam.cs.mpgc.RPG122532.model.Choice;
+import it.unicam.cs.mpgc.RPG122532.navigation.SceneNavigator;
+import it.unicam.cs.mpgc.RPG122532.repository.ChoiceRepository;
+import it.unicam.cs.mpgc.RPG122532.repository.GsonChoiceRepository;
+import it.unicam.cs.mpgc.RPG122532.view.ChoiceSceneView;
+import javafx.stage.Stage;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
-import it.unicam.cs.mpgc.RPG122532.model.Choice;
 
 public class ChoiceController {
     private static final String FILE_PATH = "src/main/resources/File/choice.json";
 
-    /** Istanza Gson configurata per output formattato */
-    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+    private final ChoiceRepository choiceRepository;
+    private final SceneNavigator navigator;
 
-    public Choice readChoice(int IDchoice) {
-        try (FileReader reader = new FileReader(FILE_PATH)) {
-            var listType = new TypeToken<List<Choice>>() {
-            }.getType();
-            List<Choice> choices = GSON.fromJson(reader, listType);
-            Choice requestChoice = choices.stream()
-                    .filter(u -> u.getIDchoice() == IDchoice)
-                    .findFirst()
-                    .orElse(null);
-            return requestChoice;
+    public ChoiceController() {
+        this(new GsonChoiceRepository(FILE_PATH), new SceneNavigator());
+    }
 
-        } catch (IOException e) {
-            System.err.println("Errore durante la lettura del file choice: " + e.getMessage());
-            return null;
-        }
+    public ChoiceController(ChoiceRepository choiceRepository, SceneNavigator navigator) {
+        this.choiceRepository = choiceRepository;
+        this.navigator = navigator;
+    }
+
+    public List<Choice> readChoice(int IDscene) {
+        return choiceRepository.findByScene(IDscene);
+    }
+
+    public void StartFXML(Stage stage, int IDScene) throws IOException {
+        navigator.switchTo(stage, "/Scene/choice-scene.fxml", "Direttore d'Ospedale", loader -> {
+            ChoiceSceneView choiceSceneView = loader.getController();
+            choiceSceneView.init(this, IDScene);
+        });
     }
 }

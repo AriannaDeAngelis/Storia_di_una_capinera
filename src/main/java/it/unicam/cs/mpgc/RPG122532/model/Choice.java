@@ -5,7 +5,7 @@ public class Choice {
     private int IDchoice;
     private int IDscene;
     private String message;
-    private String nextScene;
+    private int nextScene;
     private int alterWill;
     private int alterHealt;
     private int alterResignation;
@@ -34,11 +34,11 @@ public class Choice {
         this.message = message;
     }
 
-    public String getNextScene() {
+    public int getNextScene() {
         return nextScene;
     }
 
-    public void setNextScene(String nextScene) {
+    public void setNextScene(int nextScene) {
         this.nextScene = nextScene;
     }
 

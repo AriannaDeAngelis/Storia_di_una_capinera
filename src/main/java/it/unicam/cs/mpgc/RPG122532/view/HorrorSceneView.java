@@ -1,6 +1,8 @@
 package it.unicam.cs.mpgc.RPG122532.view;
 
+import it.unicam.cs.mpgc.RPG122532.controller.ChoiceController;
 import it.unicam.cs.mpgc.RPG122532.controller.SceneController;
+import it.unicam.cs.mpgc.RPG122532.model.Choice;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +21,7 @@ import java.util.List;
 public class HorrorSceneView {
     private List<String> textList = new ArrayList<>();
     private int currentText;
-
+    private int currentScene;
     @FXML
     private Text storyText;
 
@@ -28,6 +30,7 @@ public class HorrorSceneView {
 
     public void init(SceneController sceneController, int ID){
         currentText = 0;
+        currentScene = ID;
         it.unicam.cs.mpgc.RPG122532.model.Scene sceneData = sceneController.readScene(ID);
         this.textList = sceneData.getTextList();
         storyText.setText(textList.get(currentText));
@@ -55,14 +58,15 @@ public class HorrorSceneView {
     }
 
     private void ChangeScene(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Scene/choice-scene.fxml"));
-        Parent root = loader.load();
-        Scene scene = new Scene(root, 1200, 800);
-        /*if (root instanceof Region region) {
-            region.prefWidthProperty().bind(scene.widthProperty());
-            region.prefHeightProperty().bind(scene.heightProperty());
-        }*/
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
+        ChoiceController choiceController = new ChoiceController();
+        List<Choice> choices = choiceController.readChoice(currentScene);
+
+
+        if(choices==null || choices.isEmpty()){
+            SceneController sceneController = new SceneController();
+            sceneController.StartFXML((Stage) ((Node) event.getSource()).getScene().getWindow(),currentScene+1);
+        } else {
+            choiceController.StartFXML((Stage) ((Node) event.getSource()).getScene().getWindow(),currentScene);
+        }
     }
 }

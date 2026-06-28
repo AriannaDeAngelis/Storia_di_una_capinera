@@ -1,39 +1,44 @@
 package it.unicam.cs.mpgc.RPG122532.controller;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 import it.unicam.cs.mpgc.RPG122532.model.Choice;
 import it.unicam.cs.mpgc.RPG122532.model.GameParameter;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.List;
+import it.unicam.cs.mpgc.RPG122532.repository.GsonParameterStore;
+import it.unicam.cs.mpgc.RPG122532.repository.ParameterStore;
 
 public class GameParameterController {
     private static final String FILE_PATH = "src/main/resources/File/GameParameter.json";
 
-    /** Istanza Gson configurata per output formattato */
-    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+    private final ParameterStore parameterStore;
 
-    public GameParameter readParameter() {
-        try (FileReader reader = new FileReader(FILE_PATH)) {
-            var listType = new TypeToken<GameParameter>() {
-            }.getType();
-            GameParameter parameters = GSON.fromJson(reader, listType);
-            return parameters;
-
-        } catch (IOException e) {
-            System.err.println("Errore durante la lettura del file choice: " + e.getMessage());
-            return null;
-        }
+    public GameParameterController() {
+        this(new GsonParameterStore(FILE_PATH));
     }
 
-    public boolean startNewGame(){
+    public GameParameterController(ParameterStore parameterStore) {
+        this.parameterStore = parameterStore;
+    }
+
+    public GameParameter readParameter() {
+        return parameterStore.load();
+    }
+
+    public boolean startNewGame() {
         GameParameter gameParameter = readParameter();
-        if (gameParameter == null){
+        if (gameParameter == null) {
+            gameParameter = new GameParameter();
+            parameterStore.save(gameParameter);
             return true;
         } else {
             return false;
         }
+    }
+
+    public void setParameter(Choice choice) {
+        GameParameter gameParameter = readParameter();
+        gameParameter.setHealt(gameParameter.getHealt() + choice.getAlterHealt());
+        gameParameter.setWill(gameParameter.getWill() + choice.getAlterWill());
+        gameParameter.setResignation(gameParameter.getResignation() + choice.getAlterResignation());
+        gameParameter.setIDscene(choice.getNextScene());
+        parameterStore.save(gameParameter);
     }
 }
