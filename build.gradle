@@ -5,7 +5,13 @@ plugins {
 
 }
 
-group = 'it.unicam.cs.mpgc.jtime122532'
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+group = 'it.unicam.cs.mpgc.rpg122532'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -26,8 +32,10 @@ test {
 }
 
 javafx {
-    version = "21.0.7"
+    version = "25"
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'it.unicam.cs.mpgc.RPG122532.Main'
+application {
+    mainClass = 'it.unicam.cs.mpgc.rpg122532.Main'
+}
